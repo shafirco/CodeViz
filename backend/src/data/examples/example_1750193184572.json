@@ -1,0 +1,115 @@
+{
+  "success": true,
+  "analysis": {
+    "algorithm": {
+      "algorithmType": "Binary Search",
+      "category": "Searching",
+      "timeComplexity": "O(log n)",
+      "spaceComplexity": "O(1)",
+      "explanation": "Binary search is a searching algorithm that works on sorted arrays by repeatedly dividing the search interval in half. It compares the target value to the middle element of the array and narrows down the search until the target is found or the interval is empty."
+    },
+    "inputs": {
+      "inputs": [
+        {
+          "name": "arr",
+          "type": "array",
+          "description": "The sorted array to search in",
+          "constraints": [
+            "non-empty",
+            "sorted"
+          ]
+        },
+        {
+          "name": "target",
+          "type": "number",
+          "description": "The value to search for in the array",
+          "constraints": [
+            "integer"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "input": {
+            "arr": [
+              1,
+              3,
+              5,
+              7,
+              9
+            ],
+            "target": 5
+          },
+          "expectedOutput": 2
+        },
+        {
+          "input": {
+            "arr": [
+              2,
+              4,
+              6,
+              8,
+              10
+            ],
+            "target": 7
+          },
+          "expectedOutput": -1
+        }
+      ]
+    },
+    "metaphors": [
+      {
+        "name": "Binary Search Dance",
+        "description": "Imagine dancers in a line sorted by height performing a binary search routine to find a partner of a specific height.",
+        "learningStyle": "visual",
+        "steps": [
+          "Dancers stand in a line sorted by height",
+          "Lead dancer (middle) compares height with target height",
+          "Dancers split into two groups based on height comparison",
+          "Repeat with the appropriate group until partner is found or no more dancers"
+        ],
+        "elements": {
+          "dancers": "array elements",
+          "lead dancer": "middle element",
+          "height": "height comparison"
+        },
+        "visualProperties": {
+          "primaryElements": [
+            "dancer",
+            "lead-dancer"
+          ],
+          "secondaryElements": [
+            "height-comparison",
+            "direction-indicator"
+          ],
+          "animations": [
+            "move",
+            "compare",
+            "split"
+          ],
+          "interactiveElements": [
+            "selectable-dancers",
+            "slider"
+          ],
+          "layout": {
+            "type": "vertical",
+            "arrangement": "linear"
+          },
+          "colorScheme": {
+            "primary": "#FF6384",
+            "secondary": "#36A2EB",
+            "highlight": "#FFCE56"
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "savedAt": "2025-06-17T20:46:24.572Z",
+    "algorithmType": "Binary Search",
+    "complexity": {
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  }
+}

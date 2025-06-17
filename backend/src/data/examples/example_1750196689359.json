@@ -1,0 +1,101 @@
+{
+  "success": true,
+  "analysis": {
+    "algorithm": {
+      "algorithmType": "Binary Search",
+      "category": "Searching",
+      "timeComplexity": "O(log n)",
+      "spaceComplexity": "O(1)",
+      "explanation": "Binary Search is a searching algorithm that works on sorted arrays by repeatedly dividing the search interval in half. It efficiently finds the target value by comparing it to the middle element of the array and adjusting the search interval accordingly."
+    },
+    "inputs": {
+      "inputs": [
+        {
+          "name": "arr",
+          "type": "array",
+          "description": "Input array to search",
+          "constraints": [
+            "sorted"
+          ]
+        },
+        {
+          "name": "target",
+          "type": "number",
+          "description": "Target value to find in the array",
+          "constraints": []
+        }
+      ],
+      "examples": [
+        {
+          "input": {
+            "arr": [
+              1,
+              3,
+              5,
+              7,
+              9
+            ],
+            "target": 5
+          },
+          "expectedOutput": 2
+        }
+      ]
+    },
+    "metaphors": [
+      {
+        "name": "Binary Search in Library",
+        "description": "Imagine searching for a book in a well-organized library with books sorted in ascending order of their ID numbers.",
+        "learningStyle": "visual",
+        "steps": [
+          "Start at the middle of the library",
+          "Check the ID of the book in the middle",
+          "If it matches the target, you found the book",
+          "If the target is smaller, look in the left half of the library",
+          "If the target is larger, look in the right half of the library",
+          "Repeat the process until the book is found or all books are checked"
+        ],
+        "elements": {
+          "books": "array elements",
+          "library": "search interval",
+          "ID": "comparison value"
+        },
+        "visualProperties": {
+          "primaryElements": [
+            "book",
+            "library-section"
+          ],
+          "secondaryElements": [
+            "ID-label",
+            "direction-arrow"
+          ],
+          "animations": [
+            "move",
+            "compare",
+            "highlight"
+          ],
+          "interactiveElements": [
+            "clickable-books",
+            "search-bar"
+          ],
+          "layout": {
+            "type": "vertical",
+            "arrangement": "linear"
+          },
+          "colorScheme": {
+            "primary": "#4A90E2",
+            "secondary": "#F5A623",
+            "highlight": "#7ED321"
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "savedAt": "2025-06-17T21:44:49.359Z",
+    "algorithmType": "Binary Search",
+    "complexity": {
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  }
+}

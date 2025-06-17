@@ -1,0 +1,84 @@
+{
+  "success": true,
+  "analysis": {
+    "algorithm": {
+      "algorithmType": "While Loop",
+      "category": "Iteration",
+      "timeComplexity": "O(1)",
+      "spaceComplexity": "O(1)",
+      "explanation": "A while loop is a control flow statement that repeatedly executes a block of code as long as the specified condition is true."
+    },
+    "inputs": {
+      "inputs": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Variable used in the while loop condition",
+          "constraints": [
+            "Integer"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "input": {
+            "x": 0
+          },
+          "expectedOutput": "No specific output, depends on the context"
+        }
+      ]
+    },
+    "metaphors": [
+      {
+        "name": "Staircase Climbing",
+        "description": "Imagine climbing stairs where each step represents an iteration in the loop",
+        "learningStyle": "kinesthetic",
+        "steps": [
+          "Start at the bottom of the staircase",
+          "Climb one step at a time",
+          "Check if you have climbed 5 steps",
+          "If not, repeat climbing one step"
+        ],
+        "elements": {
+          "staircase": "loop iterations",
+          "step": "each iteration",
+          "climbedSteps": "current value of x"
+        },
+        "visualProperties": {
+          "primaryElements": [
+            "step",
+            "climbedSteps"
+          ],
+          "secondaryElements": [
+            "staircase"
+          ],
+          "animations": [
+            "step-up",
+            "check",
+            "repeat"
+          ],
+          "interactiveElements": [
+            "step-button"
+          ],
+          "layout": {
+            "type": "vertical",
+            "arrangement": "linear"
+          },
+          "colorScheme": {
+            "primary": "#FF5733",
+            "secondary": "#33FF57",
+            "highlight": "#3357FF"
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "savedAt": "2025-06-17T20:15:57.339Z",
+    "algorithmType": "While Loop",
+    "complexity": {
+      "time": "O(1)",
+      "space": "O(1)"
+    }
+  }
+}
