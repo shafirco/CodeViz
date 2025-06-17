@@ -86,7 +86,7 @@ NEXT_PUBLIC_BACKEND_URL=http://localhost:3000
 ## 📁 Project Structure
 
 ```
-code-viz/
+CodeViz/
 ├── frontend/                 # Next.js frontend application
 │   ├── src/
 │   │   ├── app/             # Next.js app directory (layout, page)
