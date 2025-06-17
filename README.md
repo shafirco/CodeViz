@@ -46,7 +46,7 @@ An interactive web application for visualizing and understanding algorithms thro
 1. **Clone the repository:**
 ```bash
 git clone <repository-url>
-cd code-vis-new-feature
+cd CodeViz
 ```
 
 2. **Setup Backend:**
